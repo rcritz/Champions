@@ -1,0 +1,26 @@
+#set("content") {
+  <h1>#(champion.name)</h1>
+
+  <table class="table table-bordered table-hover">
+    <tbody>
+      <tr class="d-flex">
+        <td class="col-2">
+          <strong>Tag line</strong>
+        </td>
+        <td class="col-10">
+          #(champion.title)
+        </td>
+      </tr>
+      <tr class="d-flex">
+        <td class="col-2">
+          <strong>Bio</strong>
+        </td>
+        <td class="col-10">
+          #(champion.blurb)
+        </td>
+      </tr>
+    </tbody>
+  </table>
+}
+
+#embed("base")
