@@ -53,3 +53,14 @@ struct ChampionStats: Codable {
   var attackspeedperlevel: Double
   var attackspeed: Double
 }
+
+extension Champion: Equatable {
+  static func == (lhs: Champion, rhs: Champion) -> Bool {
+    return lhs.name == rhs.name
+  }
+}
+extension Champion: Comparable {
+  static func < (lhs: Champion, rhs: Champion) -> Bool {
+    return lhs.name < rhs.name
+  }
+}
