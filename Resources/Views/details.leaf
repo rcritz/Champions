@@ -2,7 +2,8 @@
   <h1>#(champion.name)</h1>
 
   <table class="table table-bordered table-hover">
-    <tbody>
+    <caption><em>Version: #(champion.version)</em></caption>
+    <tbody>      
       <tr class="d-flex">
         <td class="col-2">
           <strong>Tag line</strong>

@@ -1,0 +1,26 @@
+#set("content") {
+  <h1>Current version: #(version)</h1>
+
+  #if(error) {
+    <div class="alert alert-danger" role="alert">
+      Requested version not available.
+    </div>
+  }
+
+  <form method="post">
+    <div class="form-group">
+      <label for="version">New version</label>
+      <input type="text" class="form-control" id="version" name="version" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+      Change version
+    </button>
+  </form>
+
+  <div class="mt-3">
+    <em>Visit <a href="https://developer.riotgames.com/static-data.html">Riot Developer Docs</a> for more information.</em>
+  </div>
+}
+
+#embed("base")
