@@ -1,0 +1,19 @@
+#set("content") {
+  <h1>Select a champion</h1>
+  <form method="post">
+    <div class="form-group">
+      <label for="champion">Champion</label>
+      <select name="champion" id="champion" class="form-control">
+        #for(champion in champions) {
+          <option value="#(champion)">#(champion)</option>
+        }
+      </select>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">
+      Show info
+    </button>
+  </form>
+}
+
+#embed("base")
